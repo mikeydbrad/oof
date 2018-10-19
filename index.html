@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>oof</title>
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <audio id="oof-audio">
+      <source src="oof.mp3" type="audio/mpeg">
+    </audio>
+
+    <button onclick="playAudio()" type="button">OOF</button>
+
+    <script>
+      let oof = document.getElementById("oof-audio");
+
+      function playAudio() { oof.play() }
+
+    </script>
+
+    <style>
+      button {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 300%;
+      }
+    </style>
+  </body>
+</html>
