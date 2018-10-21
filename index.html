@@ -10,12 +10,15 @@
       <source src="oof.mp3" type="audio/mpeg">
     </audio>
 
-    <button onclick="playAudio()" type="button">OOF</button>
+    <button type="button">OOF</button>
 
     <script>
       let oof = document.getElementById("oof-audio");
+      let btn = document.querySelector("button");
 
-      function playAudio() { oof.play() }
+      btn.onclick = function() { 
+        oof.play() 
+      }
 
     </script>
 
